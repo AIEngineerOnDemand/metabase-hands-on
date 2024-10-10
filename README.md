@@ -37,4 +37,5 @@ docker-compose up -d
 - Password: ```metabase```
 
 5. Tutorial
- Prossimametne svilupperó dei tutorial che saranno disponibili nella cartella tutorials
+
+ - Prossimamente svilupperó dei tutorial che saranno disponibili nella cartella tutorials
