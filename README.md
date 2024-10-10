@@ -10,7 +10,7 @@ Questa repository contiene una serie di esercizi e tutorial per imparare a usare
 
 ## Avvio rapido
 
- 1. Clona questo repository
+1. Clona questo repository
 
 ```sh
 git clone https://github.com/tuo-username/metabase-postgres-tutorial.git
@@ -23,7 +23,13 @@ cd metabase-postgres-tutorial
 docker-compose up -d
 ```
 
-3. Accedi a Metabase su http://localhost:3000 e segui le istruzioni per configurare la connessione a PostgreSQL.
+3. Accedi a Metabase su http://localhost:3000 e segui le istruzioni per configurare la connessione a PostgreSQL. Utilizza le seguenti credenziali di connessione:
+
+- Host: ```postgres```
+- Porta: ```5432```
+- Database: ```metabase```
+- Username: ```metabase```
+- Password: ```metabase```
 
 4. Tutorial
-I tutorial sono disponibili nella cartella tutorials. Inizia con tutorial1.md.
+ Prossimametne svilupperó dei tutorial che saranno disponibili nella cartella tutorials
