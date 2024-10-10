@@ -5,7 +5,8 @@ Questa repository contiene una serie di esercizi e tutorial per imparare a usare
 
 ## Prerequisiti
 
-- Docker e Docker Compose installati
+- Docker e Docker Compose installati. Se non li hai già installati, segui le istruzioni in [installazione_docker.md](installazione_docker.md).
+
 
 ## Avvio rapido
 
