@@ -84,9 +84,10 @@ Questa guida ti aiuterà a installare Docker e Docker Compose sul tuo sistema.
 
 4. **Verifica l'installazione**:
    - Digita:
-     ```sh
+   -  
+```sh
      docker --version
-     ```
+```
    - Dovresti vedere la versione di Docker installata.
 
 
