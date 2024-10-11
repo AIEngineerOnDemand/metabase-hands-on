@@ -8,15 +8,23 @@ services:
     volumes:
       - metabase-data:/metabase-data
 
-  postgres:
-    image: postgres
-    environment:
-      POSTGRES_USER: metabase
-      POSTGRES_PASSWORD: metabase
-      POSTGRES_DB: metabase
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - mongo-data:/data/db
+
+  # postgres:
+  #   image: postgres
+  #   environment:
+  #     POSTGRES_USER: metabase
+  #     POSTGRES_PASSWORD: metabase
+  #     POSTGRES_DB: metabase
+  #   volumes:
+  #     - postgres-data:/var/lib/postgresql/data
 
 volumes:
   metabase-data:
-  postgres-data:
+  mongo-data:
+  # postgres-data:
