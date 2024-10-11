@@ -28,13 +28,14 @@ cd metabase-hands-on
 docker-compose up -d
 ```
 
-4. Accedi a Metabase su http://localhost:3000 e segui le istruzioni per configurare la connessione a PostgreSQL. Utilizza le seguenti credenziali di connessione:
+4. Accedi a Metabase su http://localhost:3000 e segui le istruzioni per configurare la connessione a MongoDB. Utilizza le seguenti credenziali di connessione:
 
-- Host: ```postgres```
-- Porta: ```5432```
-- Database: ```metabase```
-- Username: ```metabase```
-- Password: ```metabase```
+- Host: ```mongodb```
+- Porta: ```27017```
+- Database: il nome del database MongoDB che vuoi utilizzare
+- Username: lascia vuoto se non hai configurato l'autenticazione per MongoDB
+- Password: lascia vuoto se non hai configurato l'autenticazione per MongoDB
+
 
 5. Tutorial
 
