@@ -1,5 +1,5 @@
 Questa repository contiene una serie di esercizi e tutorial per imparare a usare Metabase con PostgreSQL, utilizzando Docker per l'ambiente di sviluppo. L'obiettivo è rendere il processo il più semplice possibile per chi non ha familiarità con Docker.
-# Metabase e PostgreSQL Tutorial Hands-On
+# Metabase e MongoDB Tutorial Hands-On
 
 Questa repository contiene una serie di esercizi e tutorial per imparare a usare Metabase con PostgreSQL, utilizzando Docker per l'ambiente di sviluppo. L'obiettivo è rendere il processo il più semplice possibile per chi non ha familiarità con Docker.
 
