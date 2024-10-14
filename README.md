@@ -28,15 +28,38 @@ cd metabase-hands-on
 docker-compose up -d
 ```
 
-4. Accedi a Metabase su http://localhost:3000 e segui le istruzioni per configurare la connessione a MongoDB. Utilizza le seguenti credenziali di connessione:
+4. Accedi a Metabase su http://localhost:3000 e segui le istruzioni per configurare la connessione a PostgreSQL. Utilizza le seguenti credenziali di connessione:
+Host: postgres 
+Porta: 5432
+Database: metabase
+Username: metabase
+Password: metabase
+Configura la connessione a MongoDB in Metabase
+Una volta che Metabase è in esecuzione, puoi configurare MongoDB come fonte di dati:
 
-- Host: ```mongodb```
-- Porta: ```27017```
-- Database: il nome del database MongoDB che vuoi utilizzare
-- Username: lascia vuoto se non hai configurato l'autenticazione per MongoDB
-- Password: lascia vuoto se non hai configurato l'autenticazione per MongoDB
+Vai su Admin Settings > Databases.
 
+Aggiungi un nuovo database e scegli MongoDB.
 
-5. Tutorial
+Inserisci i dettagli di connessione:
+
+Host: mongodb
+Porta: 27017
+Database Name: il nome del database MongoDB che vuoi utilizzare
+Username: metabase
+Password: metabase
+Connection String: mongodb://metabase:metabase@mongodb:27017/metabase?authSource=metabase
+Tutorial
+
+1. Tutorial
 
  - Prossimamente svilupperó dei tutorial che saranno disponibili nella cartella tutorials
+
+
+
+### Spiegazione delle Modifiche
+
+- **Passaggio 4**: Aggiornato per riflettere l'uso di PostgreSQL come database di backend per Metabase.
+- **Passaggio 5**: Aggiunte istruzioni dettagliate per configurare MongoDB come fonte di dati in Metabase.
+
+Seguendo queste istruzioni, dovresti essere in grado di configurare correttamente Metabase per utilizzare PostgreSQL come database di backend e MongoDB come fonte di dati.
