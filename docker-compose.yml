@@ -9,18 +9,28 @@ services:
       MB_DB_FILE: /metabase-data/metabase.db
     volumes:
       - metabase-data:/metabase-data
+    networks:
+      - metabase-network
 
   mongodb:
-    image: mongo
+    image: mongo:5.0
+    container_name: mongodb
     ports:
       - "27017:27017"
-    command: mongod --bind_ip_all --auth
     environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
       MONGO_INITDB_DATABASE: metabase
     volumes:
       - mongo-data:/data/db
       - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js
+    networks:
+      - metabase-network
 
 volumes:
   metabase-data:
   mongo-data:
+
+networks:
+  metabase-network:
+    driver: bridge
