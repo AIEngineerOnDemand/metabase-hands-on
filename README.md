@@ -62,3 +62,5 @@ Seguendo queste istruzioni, dovresti essere in grado di configurare correttament
 Se sei uno sviluppatore e preferisci evitare di fare troppi clic nell'interfaccia utente, puoi utilizzare la REST API di Metabase insieme a Python per automatizzare la creazione di funzionalità. Ad esempio, puoi creare domande e salvarle in collezioni specifiche utilizzando uno script Python.
 
 Abbiamo incluso un esempio di script Python che mostra come autenticarsi, creare una collezione e aggiungere domande utilizzando i dati di MongoDB. Puoi trovare lo script qui: [create_metabase_questions.py](create_metabase_questions.py)
+
+Utilizzando la REST API di Metabase, è possibile automatizzare la creazione e la gestione di reportistica di qualsiasi tipo e stile. Questo approccio consente di risparmiare tempo e di iterare rapidamente con i clienti, senza dover fare clic manualmente su ogni singolo tasto dell'interfaccia utente, migliorando l'efficienza e la produttività del tuo team. Puoi trovare una lista generica delle funzionalitá qui :  [guida-automazione-metabase.md](guida-automazione-metabase.md) 
