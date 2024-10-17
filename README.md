@@ -23,15 +23,24 @@ cd metabase-hands-on
 
 3. Avvia i servizi Docker
 
+Prima fai pulizia dei container
+
+```sh
+docker-compose down
+docker volume rm metabase-hands-on_mongo-data
+```
+
+Dopo avvia i servizi
+
 ```sh
 docker-compose up -d
 ```
+
 **Successivamente per evitare il problema della connessione a MongoDB é necessario per il momento eseguire manualemnte la connessione di tutti i servizi al `metabase-network`** 
 
 ```sh
 docker network connect metabase-network mongodb
 docker network connect metabase-network metabase
-docker network connect metabase-network mongodb
 docker network connect metabase-network postgres
 ```
 
