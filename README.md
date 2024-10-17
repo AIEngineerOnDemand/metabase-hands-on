@@ -46,9 +46,6 @@ Password: metabase
 Connection String: mongodb://metabase:metabase@mongodb:27017/metabase?authSource=metabase
 ```
 
-<button onclick="copyToClipboard()">Copia Connection String</button>
-
-<script> function copyToClipboard() { const str = 'mongodb://metabase:metabase@mongodb:27017/metabase?authSource=metabase'; navigator.clipboard.writeText(str).then(function() { alert('Connection String copiata negli appunti!'); }, function(err) { console.error('Errore nella copia della Connection String: ', err); }); } </script>
 
 
 ### Spiegazione delle Modifiche
