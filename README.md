@@ -26,6 +26,14 @@ cd metabase-hands-on
 ```sh
 docker-compose up -d
 ```
+**Successivamente per evitare il problema della connessione a MongoDB é necessario per il momento eseguire manualemnte la connessione di tutti i servizi al `metabase-network`** 
+
+```sh
+docker network connect metabase-network mongodb
+docker network connect metabase-network metabase
+docker network connect metabase-network mongodb
+docker network connect metabase-network postgres
+```
 
 4. Accedi a Metabase su http://localhost:3000
 
