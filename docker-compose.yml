@@ -14,6 +14,8 @@ services:
       MB_DB_HOST: postgres
     volumes:
       - metabase-data:/metabase-data
+    networks:
+      - metabase-network
 
   postgres:
     image: postgres:13
@@ -26,6 +28,8 @@ services:
       POSTGRES_DB: metabase
     volumes:
       - postgres-data:/var/lib/postgresql/data
+    networks:
+      - metabase-network
 
   mongodb:
     image: mongo:5.0
@@ -39,8 +43,13 @@ services:
     volumes:
       - mongo-data:/data/db
       - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js
+    networks:
+      - metabase-network
 
 volumes:
   metabase-data:
   postgres-data:
   mongo-data:
+
+networks:
+  metabase-network:
