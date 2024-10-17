@@ -26,7 +26,7 @@ cd metabase-hands-on
 Prima fai pulizia dei container
 
 ```sh
-docker-compose down
+docker-compose down --remove-orphans 
 docker volume rm metabase-hands-on_mongo-data
 ```
 
