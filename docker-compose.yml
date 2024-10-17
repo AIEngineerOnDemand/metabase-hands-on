@@ -3,6 +3,7 @@ version: '3.9'
 services:
   metabase:
     image: metabase/metabase
+    container_name: metabase
     ports:
       - "3000:3000"
     environment:
@@ -40,6 +41,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
       MONGO_INITDB_DATABASE: metabase
+    command: mongod --bind_ip_all
     volumes:
       - mongo-data:/data/db
       - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js
