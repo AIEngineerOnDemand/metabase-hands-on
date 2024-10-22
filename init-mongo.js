@@ -36,15 +36,14 @@ db.AnagraficheTerritorialiComuni.insertMany([
 // Crea una collezione di esempio e inserisci alcuni documenti
 db.createCollection('PianiDiZona');
 db.PianiDiZona.insertMany([
-  { Piano Di Zona: 'Ambito 4', Comune: 'Barletta', Scheda: 'A', Azione: 'A.7', Fonte Di Finanziamento: 'Fonte C', Importo Programmato: '37829', Importo Impegnato: '0', Importo Da Impegnare: '37829', Importo Liquidato: '0'},
-  { Piano Di Zona: 'Ambito 7', Comune: 'Martina Franca', Scheda: 'B', Azione: 'A.1', Fonte Di Finanziamento: 'Fonte A', Importo Programmato: '34556', Importo Impegnato: '298', Importo Da Impegnare: '34228', Importo Liquidato: '0'},
-  { Piano Di Zona: 'Ambito 8', Comune: 'Corato', Scheda: 'A', Azione: 'E.3', Fonte Di Finanziamento: 'Fonte G', Importo Programmato: '40000', Importo Impegnato: '1500', Importo Da Impegnare: '38500', Importo Liquidato: '0'},
-  { Piano Di Zona: 'Ambito 11', Comune: 'San Giovanni Rotondo', Scheda: 'C', Azione: 'D.4', Fonte Di Finanziamento: 'Fonte D', Importo Programmato: '26000', Importo Impegnato: '16000', Importo Da Impegnare: '10000', Importo Liquidato: '8000'},
-  { Piano Di Zona: 'Ambito 3', Comune: 'Otranto', Scheda: 'B', Azione: 'D.5', Fonte Di Finanziamento: 'Fonte G', Importo Programmato: '72000', Importo Impegnato: '0', Importo Da Impegnare: '72000', Importo Liquidato: '0'},
-  { Piano Di Zona: 'Ambito 12', Comune: 'Toritto', Scheda: 'A', Azione: 'F.5', Fonte Di Finanziamento: 'Fonte H', Importo Programmato: '142900', Importo Impegnato: '142900', Importo Da Impegnare: '0', Importo Liquidato: '70000'},
-  { Piano Di Zona: 'Ambito 7', Comune: 'Canosa di Puglia', Scheda: 'C', Azione: 'E.4', Fonte Di Finanziamento: 'Fonte T', Importo Programmato: '37800', Importo Impegnato: '7800', Importo Da Impegnare: '30000', Importo Liquidato: '0'},
-  { Piano Di Zona: 'Ambito 11', Comune: 'Capurso', Scheda: 'A', Azione: 'B.5', Fonte Di Finanziamento: 'Fonte E', Importo Programmato: '73000', Importo Impegnato: '20000', Importo Da Impegnare: '53000', Importo Liquidato: '10000'},
-  { Piano Di Zona: 'Ambito 9', Comune: 'Conversano', Scheda: 'A', Azione: 'L.5', Fonte Di Finanziamento: 'Fonte G', Importo Programmato: '46700', Importo Impegnato: '25000', Importo Da Impegnare: '21700', Importo Liquidato: '15000'},
-  { Piano Di Zona: 'Ambito 9', Comune: 'Valenzano', Scheda: 'B', Azione: 'D.7', Fonte Di Finanziamento: 'Fonte E', Importo Programmato: '38093', Importo Impegnato: '15000', Importo Da Impegnare: '23093', Importo Liquidato: '0'}
+  { PianoDiZona: 'Ambito 4', Comune: 'Barletta', Scheda: 'A', Azione: 'A.7', FonteDiFinanziamento: 'Fonte C', ImportoProgrammato: '37829', ImportoImpegnato: '0', ImportoDaImpegnare: '37829', ImportoLiquidato: '0'},
+  { PianoDiZona: 'Ambito 7', Comune: 'Martina Franca', Scheda: 'B', Azione: 'A.1', FonteDiFinanziamento: 'Fonte A', ImportoProgrammato: '34556', ImportoImpegnato: '298', ImportoDaImpegnare: '34228', ImportoLiquidato: '0'},
+  { PianoDiZona: 'Ambito 8', Comune: 'Corato', Scheda: 'A', Azione: 'E.3', FonteDiFinanziamento: 'Fonte G', ImportoProgrammato: '40000', ImportoImpegnato: '1500', ImportoDaImpegnare: '38500', ImportoLiquidato: '0'},
+  { PianoDiZona: 'Ambito 11', Comune: 'San Giovanni Rotondo', Scheda: 'C', Azione: 'D.4', FonteDiFinanziamento: 'Fonte D', ImportoProgrammato: '26000', ImportoImpegnato: '16000', ImportoDaImpegnare: '10000', ImportoLiquidato: '8000'},
+  { PianoDiZona: 'Ambito 3', Comune: 'Otranto', Scheda: 'B', Azione: 'D.5', FonteDiFinanziamento: 'Fonte G', ImportoProgrammato: '72000', ImportoImpegnato: '0', ImportoDaImpegnare: '72000', ImportoLiquidato: '0'},
+  { PianoDiZona: 'Ambito 12', Comune: 'Toritto', Scheda: 'A', Azione: 'F.5', FonteDiFinanziamento: 'Fonte H', ImportoProgrammato: '142900', ImportoImpegnato: '142900', ImportoDaImpegnare: '0', ImportoLiquidato: '70000'},
+  { PianoDiZona: 'Ambito 7', Comune: 'Canosa di Puglia', Scheda: 'C', Azione: 'E.4', FonteDiFinanziamento: 'Fonte T', ImportoProgrammato: '37800', ImportoImpegnato: '7800', ImportoDaImpegnare: '30000', ImportoLiquidato: '0'},
+  { PianoDiZona: 'Ambito 11', Comune: 'Capurso', Scheda: 'A', Azione: 'B.5', FonteDiFinanziamento: 'Fonte E', ImportoProgrammato: '73000', ImportoImpegnato: '20000', ImportoDaImpegnare: '53000', ImportoLiquidato: '10000'},
+  { PianoDiZona: 'Ambito 9', Comune: 'Conversano', Scheda: 'A', Azione: 'L.5', FonteDiFinanziamento: 'Fonte G', ImportoProgrammato: '46700', ImportoImpegnato: '25000', ImportoDaImpegnare: '21700', ImportoLiquidato: '15000'},
+  { PianoDiZona: 'Ambito 9', Comune: 'Valenzano', Scheda: 'B', Azione: 'D.7', FonteDiFinanziamento: 'Fonte E', ImportoProgrammato: '38093', ImportoImpegnato: '15000', ImportoDaImpegnare: '23093', ImportoLiquidato: '0'}
 ]);
-
