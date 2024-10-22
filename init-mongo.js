@@ -1,5 +1,6 @@
 // Imposta la versione di compatibilità
 db = db.getSiblingDB('admin');
+print("Setting feature compatibility version to 4.4");
 db.system.version.updateOne(
   { _id: "featureCompatibilityVersion" },
   { $set: { version: "4.4" } }
@@ -7,18 +8,34 @@ db.system.version.updateOne(
 
 // Crea l'utente metabase
 db = db.getSiblingDB('metabase');
-db.createUser({
-  user: "metabase",
-  pwd: "metabase",
-  roles: [
-    {
-      role: "readWrite",
-      db: "metabase"
-    }
-  ]
-});
+print("Creating user 'metabase'");
+try {
+  db.createUser({
+    user: "metabase",
+    pwd: "metabase",
+    roles: [
+      {
+        role: "readWrite",
+        db: "metabase"
+      }
+    ]
+  });
+  print("User 'metabase' created successfully");
+} catch (e) {
+  print("Error creating user 'metabase': " + e);
+}
+
+// Verifica se l'utente è stato creato
+var user = db.getUser("metabase");
+if (user) {
+  print("User 'metabase' exists: " + JSON.stringify(user));
+} else {
+  print("User 'metabase' does not exist");
+  throw new Error("User 'metabase' was not created successfully");
+}
 
 // Crea una collezione di esempio e inserisci alcuni documenti
+print("Creating collection 'AnagraficheTerritorialiComuni' and inserting documents");
 db.createCollection('AnagraficheTerritorialiComuni');
 db.AnagraficheTerritorialiComuni.insertMany([
   { Comune: 'Bari', Provincia: 'Bari', Ambito: 'Ambito 1' },
@@ -34,6 +51,7 @@ db.AnagraficheTerritorialiComuni.insertMany([
 ]);
 
 // Crea una collezione di esempio e inserisci alcuni documenti
+print("Creating collection 'PianiDiZona' and inserting documents");
 db.createCollection('PianiDiZona');
 db.PianiDiZona.insertMany([
   { PianoDiZona: 'Ambito 4', Comune: 'Barletta', Scheda: 'A', Azione: 'A.7', FonteDiFinanziamento: 'Fonte C', ImportoProgrammato: '37829', ImportoImpegnato: '0', ImportoDaImpegnare: '37829', ImportoLiquidato: '0'},
