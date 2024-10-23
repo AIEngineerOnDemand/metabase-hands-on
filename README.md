@@ -33,7 +33,7 @@ docker volume rm metabase-hands-on_mongo-data
 Dopo avvia i servizi
 
 ```sh
-docker-compose up -d
+docker-compose up --build -d
 ```
 
 **Successivamente per evitare il problema della connessione a MongoDB é necessario per il momento eseguire manualemnte la connessione di tutti i servizi al `metabase-network`** 
