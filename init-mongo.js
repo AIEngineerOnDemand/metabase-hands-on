@@ -65,3 +65,19 @@ db.PianiDiZona.insertMany([
   { PianoDiZona: 'Ambito 9', Comune: 'Conversano', Scheda: 'A', Azione: 'L.5', FonteDiFinanziamento: 'Fonte G', ImportoProgrammato: '46700', ImportoImpegnato: '25000', ImportoDaImpegnare: '21700', ImportoLiquidato: '15000'},
   { PianoDiZona: 'Ambito 9', Comune: 'Valenzano', Scheda: 'B', Azione: 'D.7', FonteDiFinanziamento: 'Fonte E', ImportoProgrammato: '38093', ImportoImpegnato: '15000', ImportoDaImpegnare: '23093', ImportoLiquidato: '0'}
 ]);
+
+
+print("Creating collection 'BeneficiariWelfare' and inserting documents");
+db.createCollection('BeneficiariWelfare');
+db.BeneficiariWelfare.insertMany([
+  { Nome: 'Mario Rossi', Età: 45, Comune: 'Bari', Programma: 'Reddito di Dignità', StatoOccupazionale: 'Disoccupato', TitoloDiStudio: 'Diploma', Disabilità: 'Nessuna' },
+  { Nome: 'Giulia Bianchi', Età: 30, Comune: 'Brindisi', Programma: 'Reddito di Dignità', StatoOccupazionale: 'Occupato', TitoloDiStudio: 'Laurea', Disabilità: 'Nessuna' },
+  { Nome: 'Luca Verdi', Età: 50, Comune: 'Foggia', Programma: 'Reddito di Dignità', StatoOccupazionale: 'Disoccupato', TitoloDiStudio: 'Licenza Media', Disabilità: 'Fisica' },
+  { Nome: 'Anna Neri', Età: 35, Comune: 'Taranto', Programma: 'Reddito di Dignità', StatoOccupazionale: 'Occupato', TitoloDiStudio: 'Laurea', Disabilità: 'Nessuna' },
+  { Nome: 'Paolo Gialli', Età: 40, Comune: 'Lecce', Programma: 'Reddito di Dignità', StatoOccupazionale: 'Disoccupato', TitoloDiStudio: 'Diploma', Disabilità: 'Nessuna' },
+  { Nome: 'Sara Blu', Età: 28, Comune: 'Barletta', Programma: 'Reddito di Dignità', StatoOccupazionale: 'Occupato', TitoloDiStudio: 'Laurea', Disabilità: 'Nessuna' },
+  { Nome: 'Marco Neri', Età: 55, Comune: 'Andria', Programma: 'Reddito di Dignità', StatoOccupazionale: 'Disoccupato', TitoloDiStudio: 'Licenza Media', Disabilità: 'Fisica' },
+  { Nome: 'Elena Rossi', Età: 32, Comune: 'Trani', Programma: 'Reddito di Dignità', StatoOccupazionale: 'Occupato', TitoloDiStudio: 'Laurea', Disabilità: 'Nessuna' },
+  { Nome: 'Giorgio Bianchi', Età: 60, Comune: 'Otranto', Programma: 'Reddito di Dignità', StatoOccupazionale: 'Disoccupato', TitoloDiStudio: 'Diploma', Disabilità: 'Nessuna' },
+  { Nome: 'Francesca Verdi', Età: 42, Comune: 'Manfredonia', Programma: 'Reddito di Dignità', StatoOccupazionale: 'Occupato', TitoloDiStudio: 'Laurea', Disabilità: 'Nessuna' }
+]);
