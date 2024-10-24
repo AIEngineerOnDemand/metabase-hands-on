@@ -131,10 +131,10 @@ Le operazioni di aggregazione in MongoDB permettono di eseguire operazioni compl
 
 ```json
 [
-  { operazione1 },
-  { operazione2 },
+  { operazione 1 },
+  { operazione 2 },
   ...,
-  { operazionen }
+  { operazione n }
 ]
 ```
 
